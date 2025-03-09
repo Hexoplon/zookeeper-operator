@@ -58,8 +58,10 @@ The following table lists the configurable parameters of the zookeeper-operator 
 | `image.tag` | Image tag | `0.2.15` |
 | `labels` | Operator pod labels | `{}` |
 | `nodeSelector` | Map of key-value pairs to be present as labels in the node in which the pod should run | `{}` |
+| `podSecurityContext` | Security context for the pod | `{}` |
 | `rbac.create` | Create RBAC resources | `true` |
 | `resources` | Specifies resource requirements for the container | `{}` |
+| `securityContext` | Security context for the container | `{}` |
 | `serviceAccount.create` | Create service account | `true` |
 | `serviceAccount.name` | Name for the service account | `zookeeper-operator` |
 | `tolerations` | Specifies the pod's tolerations | `[]` |
